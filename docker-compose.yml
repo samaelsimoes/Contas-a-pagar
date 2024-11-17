@@ -1,0 +1,31 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: contasapagar
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+  app:
+    image: sua-imagem-app
+    container_name: app-container
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/contasapagar
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: root
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
