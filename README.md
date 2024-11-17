@@ -133,6 +133,8 @@ A aplicação e o banco de dados PostgreSQL são orquestrados usando Docker Comp
 Construir e rodar a aplicação no contêiner app.
 Rodar o banco de dados PostgreSQL no contêiner db.
 Configurar o banco de dados PostgreSQL com as credenciais definidas no arquivo application.properties.
+![Captura de tela 2024-11-17 170608](https://github.com/user-attachments/assets/93f7be91-cf59-4754-932e-4c932f612de5)
+![Captura de tela 2024-11-17 170543](https://github.com/user-attachments/assets/d661b989-319b-432d-97c7-36c09bd2a01f)
 
 
 
