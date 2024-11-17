@@ -1,6 +1,6 @@
-# Projeto Conta Service
+# Projeto Contas a pagar 
 
-Este projeto é um serviço de gerenciamento de contas a pagar, que permite cadastrar, atualizar, consultar e importar contas via arquivo CSV. A aplicação utiliza **Java 17+, Spring Boot, PostgreSQL**, e é orquestrada com **Docker e Docker Compose**.
+Este projeto é um serviço de gerenciamento de contas a pagar, que permite cadastrar, atualizar, consultar e importar contas via arquivo CSV. A aplicação utiliza **Java 17+, Spring Boot, PostgreSQL**, e é orquestrada com **Docker e Docker Compose**. Além disso, a documentação da API é gerada automaticamente utilizando **Swagger**.
 
 ## Tecnologias Utilizadas
 
@@ -12,6 +12,7 @@ Este projeto é um serviço de gerenciamento de contas a pagar, que permite cada
 - **Flyway**: Ferramenta utilizada para gerenciar migrações de banco de dados.
 - **JPA (Java Persistence API)**: Para realizar o mapeamento objeto-relacional e persistir os dados no banco de dados.
 - **Spring Security**: Para implementar o mecanismo de autenticação da aplicação.
+- **Swagger**: Para gerar e documentar automaticamente a API REST da aplicação.
 - **JUnit 5** e **Mockito**: Frameworks utilizados para escrever testes unitários e simular comportamentos durante os testes.
 
 ## Requisitos Gerais
@@ -77,7 +78,6 @@ src/
            ├── db/migration/           # Scripts do Flyway para migrações do banco
            └── docker-compose.yml      # Arquivo de orquestração Docker Compose
 
-
 ## Como Rodar o Projeto
 
 ### Pré-requisitos
@@ -126,16 +126,5 @@ Para rodar os testes unitários da aplicação, utilize o comando Maven:
 
 ```bash
 mvn test
-
-Docker Compose
-A aplicação e o banco de dados PostgreSQL são orquestrados usando Docker Compose. O arquivo docker-compose.yml é configurado para:
-
-Construir e rodar a aplicação no contêiner app.
-Rodar o banco de dados PostgreSQL no contêiner db.
-Configurar o banco de dados PostgreSQL com as credenciais definidas no arquivo application.properties.
-![Captura de tela 2024-11-17 170608](https://github.com/user-attachments/assets/93f7be91-cf59-4754-932e-4c932f612de5)
-![Captura de tela 2024-11-17 170543](https://github.com/user-attachments/assets/d661b989-319b-432d-97c7-36c09bd2a01f)
-
-
 
 ##### Todos direitos reservados Samael Simões
