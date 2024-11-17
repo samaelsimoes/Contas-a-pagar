@@ -22,9 +22,9 @@ public class Conta {
     @Column(nullable = false)
     private BigDecimal valor;
 
-    @Column(nullable = false)
+    @Column(name = "descricao", nullable = false)
     private String descricao;
 
     @Column(nullable = false)
-    private String situacao; // Exemplo: "Pendente", "Pago"
+    private String situacao;
 }
