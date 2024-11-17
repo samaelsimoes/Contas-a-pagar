@@ -138,9 +138,5 @@ public class ContaService {
         if (!ValidationUtils.isValidAmount(conta.getValor())) {
             throw new IllegalArgumentException("Valor inválido.");
         }
-
-        if (!DateUtils.isDateInRange(conta.getDataVencimento(), LocalDate.now(), LocalDate.now().plusMonths(1))) {
-            throw new IllegalArgumentException("Data de vencimento fora do intervalo permitido.");
-        }
     }
 }
