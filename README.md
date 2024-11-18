@@ -136,8 +136,4 @@ Rodar o banco de dados PostgreSQL no contêiner db.
 Configurar o banco de dados PostgreSQL com as credenciais definidas no arquivo application.properties.
 
 
-![image](https://github.com/user-attachments/assets/93f7be91-cf59-4754-932e-4c932f612de5)
-![image](https://github.com/user-attachments/assets/d661b989-319b-432d-97c7-36c09bd2a01f)
-![image](https://github.com/user-attachments/assets/c125af2-a036-4c99-a5c6-a4fee8b1e93b)
-
 ##### Todos direitos reservados Samael Simões
