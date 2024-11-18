@@ -62,35 +62,20 @@ Este projeto é um serviço de gerenciamento de contas a pagar, que permite cada
 
 A estrutura do projeto segue o padrão **Domain Driven Design (DDD)**, com as seguintes principais pastas e arquivos:
 src/
-
- └── main/
- 
-      ├── java/
-      
-      │    └── com/
-      
-      │         └── seuusuario/
-      
-      │              └── contaservice/
-      
-      │                   ├── Conta.java            # Entidade de Conta
-      
-      │                   ├── ContaService.java      # Lógica de importação e manipulação de contas
-      
-      │                   ├── ContaRepository.java   # Repositório de contas (interação com o banco)
-      
-      │                   ├── ContaController.java   # Controlador de API (para expor endpoints)
-      
-      │                   ├── ContaMapper.java       # Mapeamento entre CSV e entidade Conta (se necessário)
-      
-      │                   └── SecurityConfig.java    # Configuração de autenticação
-      
-      └── resources/
-      
-           ├── application.properties  # Configurações da aplicação
-           
-           ├── db/migration/           # Scripts do Flyway para migrações do banco
-           
+ └── main/ 
+      ├── java/      
+      │    └── com/      
+      │         └── seuusuario/      
+      │              └── contaservice/      
+      │                   ├── Conta.java            # Entidade de Conta      
+      │                   ├── ContaService.java      # Lógica de importação e manipulação de contas      
+      │                   ├── ContaRepository.java   # Repositório de contas (interação com o banco)      
+      │                   ├── ContaController.java   # Controlador de API (para expor endpoints)      
+      │                   ├── ContaMapper.java       # Mapeamento entre CSV e entidade Conta (se necessário)      
+      │                   └── SecurityConfig.java    # Configuração de autenticação      
+      └── resources/      
+           ├── application.properties  # Configurações da aplicação           
+           ├── db/migration/           # Scripts do Flyway para migrações do banco         
            └── docker-compose.yml      # Arquivo de orquestração Docker Compose
            
 
